@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/skillmatch_db
+    url: jdbc:mysql://localhost:3306/skillmatch360_db
     username: root
-    password: your_password
+    password: Prisha@2024
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
