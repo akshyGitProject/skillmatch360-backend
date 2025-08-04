@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SkillMatch360Application {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(SkillMatch360Application.class, args);
 	}
 
