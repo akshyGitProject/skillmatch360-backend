@@ -1,33 +1,19 @@
 package com.skillmatch360.backend.dto;
 
+//import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
+import lombok.*;
 
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class SkillDTO {
     private Long id;
+
+    @NotBlank(message = "Skill name is required")
     private String name;
 
-    // Constructors
-    public SkillDTO() {}
-
-    public SkillDTO(Long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
-    // Getters and Setters
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    private String proficiency; // BASIC, INTERMEDIATE, ADVANCED, EXPERT
 }
 
